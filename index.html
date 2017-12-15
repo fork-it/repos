@@ -13,8 +13,8 @@
 
       // Put custom repo URL's in this object, keyed by repo name.
       var repoUrls = {
-        "adopt-a-hydrant": "http://codeforamerica.github.com/adopt-a-hydrant/",
-        "open311dashboard": "http://codeforamerica.github.com/open311dashboard/"
+        "adopt-a-hydrant": "http://fork-it/weFork/",
+        "editor": "http://fork-it.github.com/editor/"
       };
 
       function repoUrl(repo) {
@@ -66,7 +66,7 @@
         repos = repos || [];
         page = page || 1;
 
-        var uri = "https://api.github.com/orgs/codeforamerica/repos?callback=?"
+        var uri = "https://api.github.com/orgs/fork-it/repos?callback=?"
                 + "&per_page=100"
                 + "&page="+page;
 
